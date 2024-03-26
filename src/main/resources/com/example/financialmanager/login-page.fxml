@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.financialmanager.LoginPageController">
+
+    <VBox alignment="CENTER" layoutX="152.0" prefHeight="400.0" prefWidth="264.0" spacing="10">
+      <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="167.0" text="Login With an existing account" underline="true" wrapText="true" />
+        <Label text="Login" />
+        <TextField fx:id="loginUsernameField" promptText="Username" />
+        <PasswordField fx:id="loginPasswordField" promptText="Password" />
+        <Button fx:id="loginButton" onAction="#login" text="Login" />
+        <Separator prefHeight="2.0" prefWidth="233.0" />
+      <Label text="Don't have an account? Register now" wrapText="true" />
+        <Label text="Register" />
+        <TextField fx:id="registerUsernameField" prefHeight="25.0" prefWidth="355.0" promptText="Username" />
+        <PasswordField fx:id="registerPasswordField" promptText="Password" />
+        <Button fx:id="registerButton" onAction="#register" text="Register" />
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.financialmanager.ExpensePageController">
+    <children>
+        <Pane fx:id="contentPane" layoutY="50.0" prefHeight="350.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="350.0" prefWidth="600.0">
+                    <children>
+                        <AnchorPane prefHeight="350.0" prefWidth="121.0">
+                            <children>
+                                <TextField alignment="CENTER" editable="false" layoutX="8.0" layoutY="6.0" prefHeight="25.0" prefWidth="101.0" text="Expenses" />
+                                <Button layoutX="10.0" layoutY="169.0" mnemonicParsing="false" onAction="#openAddExpenseDialog" prefHeight="25.0" prefWidth="101.0" text="Add Expense" />
+                                <Button layoutX="10.0" layoutY="204.0" mnemonicParsing="false" onAction="#deleteExpense" prefHeight="25.0" prefWidth="101.0" text="Delete Expense" />
+                                <Button layoutX="10.0" layoutY="241.0" mnemonicParsing="false" onAction="#openUpdateExpenseDialog" prefHeight="25.0" prefWidth="101.0" text="Update Expense" />
+                            </children>
+                        </AnchorPane>
+                        <TableView fx:id="expenseTableView" layoutX="120.0" prefHeight="350.0" prefWidth="510.0">
+                            <columns>
+                                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                                <TableColumn fx:id="amountColumn" prefWidth="75.0" text="Amount" />
+                                <TableColumn fx:id="sourceColumn" prefWidth="118.3333740234375" text="Source" />
+                                <TableColumn fx:id="descriptionColumn" prefWidth="231.00003051757812" text="Description" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </Pane>
+        <Button fx:id="overviewPageButton" layoutX="511.0" layoutY="16.0" mnemonicParsing="false" onAction="#showOverviewPage" text="Overview" />
+        <Button fx:id="incomePageButton" layoutX="420.0" layoutY="14.0" mnemonicParsing="false" onAction="#showIncomePage" text="Income" />
+        <Button layoutX="326.0" layoutY="14.0" mnemonicParsing="false" text="Expense" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="addIncomePane" prefHeight="247.0" prefWidth="241.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.financialmanager.AddExpenseController">
+    <children>
+        <VBox layoutX="9.0" layoutY="14.0" prefHeight="167.0" prefWidth="224.0" spacing="10.0">
+            <children>
+                <TextField fx:id="nameField" promptText="Name" />
+                <TextField fx:id="amountField" promptText="Amount" />
+                <ComboBox fx:id="sourceComboBox" prefHeight="25.0" prefWidth="277.0" promptText="Source" />
+                <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="277.0" promptText="Date" />
+                <TextField fx:id="descriptionField" promptText="Description" />
+            </children>
+        </VBox>
+          <Button layoutX="87.0" layoutY="202.0" onAction="#addExpense" prefHeight="29.0" prefWidth="67.0" text="Add">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
